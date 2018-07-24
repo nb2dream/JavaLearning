@@ -1,11 +1,3 @@
-/**
-* @Title: BubbleSort.java
-* @Package com.edu.sort
-* @Description: TODO(用一句话描述该文件做什么)
-* @author nb2dream
-* @date 2018年7月24日
-* @version V1.0
-*/
 package com.edu.sort;
 
 import java.util.Arrays;
