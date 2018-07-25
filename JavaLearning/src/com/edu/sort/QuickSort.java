@@ -13,14 +13,13 @@ import java.util.stream.Collectors;
 public class QuickSort {
 	 
     public static void main(String[] args) {
-        QuickSort qs = new QuickSort();
-        Object [] array = { 78, 34, 12, 64, 5, 4, 62, 99, 98, 5, 18, 23, 34, 15, 51 };
-        qs.sort(array);
+    	Object [] array={1,23,53,64,2,3,4,2,5,6,3,4,89};
+        sort(array);
         System.out.println(Arrays.stream(array).map(x -> x.toString()).collect(Collectors.joining(",", "[", "]")));
 
     }
     
-    public void sort(Object [] array) {
+    public static void sort(Object [] array) {
         quickSort(array, 0, array.length - 1);
     }
  
@@ -32,7 +31,7 @@ public class QuickSort {
      * @param high
      *            数组末尾索引
      */
-    public void quickSort(Object [] array, int low, int high) {
+    public static void quickSort(Object [] array, int low, int high) {
         int middleIndex;
         if (low < high) {
             middleIndex = getMiddleIndex(array, low, high);
@@ -45,7 +44,7 @@ public class QuickSort {
      * 简单划分方法
      */
     
-    public int getMiddleIndex(Object [] array, int i, int j) {
+    public static int getMiddleIndex(Object [] array, int i, int j) {
         int pivot = (int) array[i]; // array[i] 就是 第一个坑
  
         while (i < j) {

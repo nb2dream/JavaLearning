@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 
 public class BubbleSort {
 	public static void main(String[] args) {
-		Object [] array={1,23,53,64,2,3,4,2};
+		Object [] array={1,23,53,64,2,3,4,2,5,6,3,4,89};
 		sort(array);
 		System.out.println(Arrays.stream(array).map(x -> x.toString()).collect(Collectors.joining(",", "[", "]")));
 	}	
